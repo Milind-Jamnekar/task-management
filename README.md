@@ -32,6 +32,42 @@
 $ pnpm install
 ```
 
+### Mysql Docker setup
+
+### 1. Download the image
+
+```bash
+docker pull mysql:latest
+```
+
+### 2. after downloading mysql image, create mysql server container
+
+```bash
+docker run -d --name task-mysql -e MYSQL_ROOT_PASSWORD=root -p 3307:3306 mysql
+```
+
+### 3. create database for this project by entering in mysql shell
+
+3.1 if you have mysql client on local you can type this command
+
+```bash
+mysql --host=127.0.0.1 --port=3307 -u root -p
+```
+
+3.2 if not you can enter to conatainer mysql shell by
+
+```bash
+docker exec -it test-mysql bash
+```
+
+### 4. Create database in sql shell
+
+```bash
+CREATE DATABASE tasks;
+```
+
+### 4. configure Typeorm module
+
 ## Compile and run the project
 
 ```bash
