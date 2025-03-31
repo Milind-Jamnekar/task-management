@@ -13,7 +13,7 @@ export class Task {
   @Column()
   name: string;
 
-  @Column({ type: 'timestamptz' })
+  @Column({ type: 'datetime' })
   date: Date;
 
   @Column({ default: false })
