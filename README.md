@@ -99,21 +99,21 @@ $ pnpm run test:cov
 ### Project Setup
 
 - [x] Initialize NestJS project
-  - [x] Configure TypeORM
-  - [x] Set up environment variables
+- [x] Configure TypeORM
+- [x] Set up environment variables
 
 ### Create Task Module
 
 - [x] Define Task entity. -[x] Create DTOs for task operations
-      Create service with business logic
-      Create controller with endpoints
+- [x] Create service with business logic
+- [x] Create controller with endpoints
 
-Create Auth Module
+### Create Auth Module
 
-Define User entity
-Implement registration/login
-Create JWT strategy
-Implement guards
+- [x] Define User entity
+- [x] Implement registration/login
+- [x] Create JWT strategy
+- [x] Implement guards
 
 Advanced Features
 
